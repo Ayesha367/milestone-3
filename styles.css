@@ -1,0 +1,112 @@
+/* General Body Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa; /* Light gray background for a soft, professional look */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  /* Resume Container Styling */
+  #resume-output {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  #resume-output h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a202c; /* Darker header color for professionalism */
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* Resume Content Styling */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #4a5568; /* Subtle dark gray for text */
+  }
+  
+  /* Editable Fields Styling */
+  [contenteditable="true"] {
+    padding: 10px;
+    border: 1px solid #cbd5e0; /* Light border color for a soft look */
+    border-radius: 6px;
+    background-color: #edf2f7; /* Light background for editable fields */
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  [contenteditable="true"]:focus {
+    border-color: #3182ce; /* Blue border on focus for clarity */
+    background-color: #e2e8f0; /* Slightly darker background on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Button Styling */
+  #save-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #2b6cb0; /* Professional blue */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    max-width: 200px;
+  }
+  
+  #save-btn:hover {
+    background-color: #2c5282; /* Darker blue for hover effect */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    #resume-output {
+      padding: 20px;
+      width: 95%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #resume-output h2 {
+      font-size: 1.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    #save-btn {
+      font-size: 1rem;
+      padding: 10px 25px;
+    }
+  }
